@@ -6,7 +6,6 @@ import { CabecalhoComponent } from "./componentes/cabecalho/cabecalho.component"
 import { SeparadorComponent } from "./componentes/separador/separador.component";
 import { ContatoComponent } from './componentes/contato/contato.component';
 import { FormsModule } from '@angular/forms';
-
 interface Contato {
   id: number;
   nome: string;
@@ -14,11 +13,14 @@ interface Contato {
 }
 
 import agenda from './agenda.json'
+import { FormularioContatoComponent } from "./paginas/formulario-contato/formulario-contato.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ContainerComponent, CabecalhoComponent, SeparadorComponent, ContatoComponent, FormsModule],
+  imports: [CommonModule, RouterOutlet, ContainerComponent, CabecalhoComponent, SeparadorComponent, ContatoComponent, FormsModule, FormularioContatoComponent
+
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

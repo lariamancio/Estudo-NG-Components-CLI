@@ -22,7 +22,7 @@ export class FormularioContatoComponent {
 
     constructor () {
       this.contatoForm = new FormGroup({
-        nome: new FormControl('Lari'),
+        nome: new FormControl(''),
         telefone: new FormControl(''),
         email: new FormControl(''),
         aniversario: new FormControl(''),
@@ -30,4 +30,10 @@ export class FormularioContatoComponent {
         observacoes: new FormControl('')
       })
     }
+
+    salvarContato() {
+      
+    }
+
+
 }

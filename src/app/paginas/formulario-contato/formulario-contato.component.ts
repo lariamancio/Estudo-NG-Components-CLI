@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-import { ContainerComponent } from "../../componentes/container/container.component";
-import { CommonModule } from '@angular/common';
-import { SeparadorComponent } from '../../componentes/separador/separador.component';
+import { RouterLink } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+
+import { ContainerComponent } from "../../componentes/container/container.component";
+import { SeparadorComponent } from '../../componentes/separador/separador.component';
 
 @Component({
   selector: 'app-formulario-contato',
@@ -12,6 +14,7 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
     ContainerComponent,
     SeparadorComponent,
     ReactiveFormsModule,
+    RouterLink
   ],
   templateUrl: './formulario-contato.component.html',
   styleUrl: './formulario-contato.component.css'
